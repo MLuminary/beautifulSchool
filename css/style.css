@@ -1,0 +1,422 @@
+/*body*/
+@font-face{
+    font-family: "fzqk";
+    src:url("../font/fzqk.TTF");
+}
+#container{
+    display: none;
+}
+.section{
+    font-family: "fzqk";
+    color: #a09e9e;
+}
+.clearfloat{
+    zoom: 1;
+}
+.clearfloat:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*page1*/
+.page1{
+    position: relative;
+    overflow: hidden;
+}
+.page1 .message{
+    opacity: 0;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    font-size: 1em;
+    width: 15em;
+    height: 2em;
+    z-index: 999;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2em;
+    margin-left: -7.5em;
+    
+}
+    /*banner*/
+    
+    .page1 .bg1{
+        height: 100%;
+        background: url(../images/banner1.jpg) 50% 100% no-repeat;
+    }
+    .page1 .bg2{
+        height: 100%;
+        background: url(../images/banner2.jpg) 50% 100%no-repeat;
+    }
+    .page1 .bg3{
+        height: 100%;
+        background: url(../images/banner3.jpg) 50% 100% no-repeat;
+    }
+    .page1 .bg4{
+        height: 100%;
+        background: url(../images/banner4.jpg) 50% 100% no-repeat;
+    }
+    .page1 .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 69px;
+        z-index: 2;
+        color: #fff;
+    }
+    .page1 .header .left{
+        position: absolute;
+        height: 100%;
+        line-height: 69px;
+        left: 0;
+    }
+    .page1 .header a{
+        color: #fff;
+    }
+    .page1 .header .left a{
+        font-size: 1.5em;
+        margin-left: 1em;
+        letter-spacing: .5em;
+    }
+    .page1 .header .right{
+        position: absolute;
+        height: 100%;
+        line-height: 69px;
+        right: 0;
+    }
+    .page1 .header .right a{
+        font-size: 1.125em;
+        margin: 0 1em;
+        letter-spacing: .3em;
+    }
+    .page1 .mask{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0,.1)
+    }
+    .page1 .banner-text{
+        position: absolute;
+        z-index: 2;
+        bottom: 150px;
+        width: 100%;
+        text-align: center;
+    }
+    .page1 .banner-text .txt{
+        font-size: 3em;
+        color: #fff;
+        letter-spacing: .3em;
+        display: inline-block;
+        position: relative;
+    }
+    .page1 .banner-text .txt::after,
+    .page1 .banner-text .txt::before{
+        position: absolute;
+        content: "";
+        width: 1.25em;
+        border-top:3px solid #fff; 
+        top: 50%;
+    }
+    .page1 .banner-text .txt::before{
+        left: -1.5em;
+    }
+    .page1 .banner-text .txt::after{
+        right: -1.2em;
+    }
+    .page1 .nav{
+        position: absolute;
+        bottom: 0;
+        height: 80px;
+        width: 100%;
+        background: #f2f2f2;
+        z-index: 233;
+    }
+    .page1 .nav ul{
+        height: 100%;
+        margin: 0 auto;
+        display: table;
+    }
+    .page1 .nav ul li{
+        float: left;
+        height: 80px;
+        line-height: 80px;
+        font-size: 1em;
+        color: #868686;
+        letter-spacing: .2em;
+    }
+    .page1 .nav ul li+li{
+        margin-left: 10em;
+    }
+    .page1 .nav ul li a{
+        transition: .5s;
+    }
+    .page1 .nav ul li a:hover{
+        letter-spacing: .5em;
+    }
+
+
+
+.page2 .pic{
+    opacity: 0;
+    position: absolute;
+    background: url(../images/page2.jpg) no-repeat;
+    background-size: cover;
+    right: -100px;
+    top: 0;
+    height: 90%;
+    width: 70%;
+}
+.page2 .txt{
+    opacity: 0;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 10em;
+    padding-top: 22em;
+    letter-spacing: .3em;
+}
+.page2 .txt h1{
+    font-size: 1.875em;
+    margin-bottom: 2em;
+}
+.page2 .txt p{
+    font-size: 1em;
+    margin-top: .5em;
+}
+.page2 .txt a{
+    color: #a09e9e;
+    margin-top: 2em;
+    display: block;
+}
+
+
+.page3 .pic{
+    opacity: 0;
+    position:absolute;
+    background: url(../images/page3.jpg) no-repeat;
+    background-size: cover;
+    height: 90%;
+    width: 70%;
+    top: 2.5em;
+    left: -200px;
+}
+.page3 .txt{
+    opacity: 0;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    box-sizing: border-box;
+    padding-top: 4em;
+}
+.page3 .txt h1{
+    position: absolute;
+    width: 1em;
+    font-size: 1.5em;
+    left: 50%;
+    margin-left:-.5em;
+    line-height: 20px;
+}
+.page3 .txt i{
+    display: block;
+    border-bottom: 3px solid #a09e9e;
+    height: 1em;
+    width: .9em;
+    transform: rotate(15deg) translate(.1em,-.5em);
+    -webkit-transform: rotate(15deg) translate(.1em,-.5em);
+    -moz-transform: rotate(15deg) translate(.1em,-.5em);
+    -o-transform: rotate(15deg) translate(.1em,-.5em);
+}
+
+.page3 .txt p{
+    position: absolute;
+    font-size: .9em;
+    width: 1em;
+    left: 50%;
+    margin-left: -.5em;
+    top: 14em;
+    line-height: 1.25em;
+}
+.page3 .txt a{
+    position: absolute;
+    color: #a09e9e;
+    display: block;
+    font-size: .9em;
+    width: 1em;
+    left: 50%;
+    margin-left: -.5em;
+    top: 46em;
+    line-height: 1.25em;
+}
+.page3 .txt .top{
+    display: block;
+    transform: rotate(-90deg) translateY(-.1em);
+}
+.page3 .txt .bottom
+{
+    display: block;
+    transform: rotate(90deg) translateY(-.1em);
+}
+
+
+.page4 .pic{
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    background: url(../images/page4.jpg) no-repeat;
+    background-size: cover;
+}
+.page4 h1{
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 2em;
+    right: 3em;
+    letter-spacing: .3em;
+}
+.page4 .txt{
+    opacity: 0;
+    position: absolute;
+    top: 3em;
+    left: -200px;
+    letter-spacing: .2em;
+    line-height: 1.25em;
+}
+.page4 .txt a{
+    color: #a09e9e;
+}
+
+
+.page5 .pic{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height:70%;
+    bottom: -300px;
+    left: 0;
+    background: url(../images/page5.png) no-repeat 50% 0%; 
+}
+.page5 .txt{
+    opacity: 0;
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.page5 .txt h1{
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    margin-bottom: 1em;
+}
+.page5 .txt p{
+    width: 1em;
+    display: inline-block;
+    vertical-align: top;
+    font-size: .8em;
+    line-height: 1.25em;
+    margin-left: .5em;
+}
+.page5 .txt a{
+    display:inline-block;
+    width: 1em;
+    color: #a09e9e;
+    font-size: .8em;
+    margin-right: 2em;
+}
+.page5 .txt .top{
+    display: block;
+    transform: rotate(-90deg) translateY(-.1em);
+}
+.page5 .txt .bottom
+{
+    display: block;
+    transform: rotate(90deg) translateY(-.1em);
+}
+
+
+.page6 .pic{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height:60%;
+    top: -500px;
+    left: 0;
+    background: url(../images/page6.png) no-repeat 50% 100%;
+}
+.page6 .txt{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    bottom: -5px; 
+    box-sizing: border-box;
+    padding-top: 2em;  
+    letter-spacing: .3em; 
+}
+.page6 .txt h1{
+    font-size: 1.5em;
+    letter-spacing: .2em;
+    margin-bottom: 1em;
+}
+.page6 .txt p{
+    font-size: .8em;
+    line-height: 1.5em;
+}
+.page6 .txt a{
+    font-size: .8em;
+    color: #a09e9e;
+}
+.page6 .footer{
+    opacity: 0;
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    bottom: -100px;
+    text-align: center;
+}
+.page6 .footer p{
+    display: block;
+    height: 100%;
+    margin-bottom: 10px;
+    letter-spacing: .3em;
+}
+.page6 .footer i{
+    width: 100px;
+    height: 100%;
+    display: inline-block;
+    background: url(../images/footer.png) no-repeat 50% 0;
+}
+.page6 .footer span{
+    position: relative;
+    bottom: 10px;
+}
+.page6 .message{
+    opacity: 0;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    font-size: 1em;
+    width: 15em;
+    height: 2em;
+    z-index: 233;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2em;
+    margin-left: -7.5em;
+}
+
+
+
+
