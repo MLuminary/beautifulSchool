@@ -44,4 +44,4 @@ side_back旋转180deg,此时side_back背面朝上，然后在side层设置` back
 如果点击的photo原本不在中间，就会打乱所有photo的位置，让点击的photo转换到中间，当然这个位置是要设置的，
 。
 
-[效果展示](haoqinzz.cn/beautifulSchool)
+[效果展示](http://haoqinzz.cn/beautifulSchool)
