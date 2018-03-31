@@ -5,15 +5,7 @@ $(function () {
         "banner1.jpg",
         "banner2.jpg",
         "banner3.jpg",
-        "banner4.jpg",
-        "footer.png",
-        "loading.png",
-        "outy.png",
-        "page2.jpg",
-        "page3.jpg",
-        "page4.jpg",
-        "page5.png",
-        "page6.png"
+        "banner4.jpg"
     ]
 
 
